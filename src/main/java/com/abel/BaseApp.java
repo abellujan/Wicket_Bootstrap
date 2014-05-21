@@ -14,14 +14,13 @@ public class BaseApp extends WebApplication implements Serializable {
 	@Override
 	public Class<? extends Page> getHomePage() {
 		// TODO Auto-generated method stub
-		init();
 		return HomePage.class;
 	}
 	
 	@Override
 	protected void init(){
-		BootstrapSettings settings = new BootstrapSettings();
-		//settings.setXXX(...); no extra settings
+		BootstrapSettings settings = new BootstrapSettings(); //default settings
+		//settings.set??(???);
 		Bootstrap.install(this, settings);
 	}
 	
